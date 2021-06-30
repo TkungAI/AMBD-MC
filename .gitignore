@@ -53,4 +53,7 @@ dkms.conf
 
 # MATLAB unused
 slprj
+TestFolder
 *.slxc
+*.mexw64
+*.autosave
