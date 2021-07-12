@@ -57,3 +57,4 @@ TestFolder
 *.slxc
 *.mexw64
 *.autosave
+temp.slx
