@@ -27,7 +27,7 @@
 		<link>
 			<name>BLDCctrlBasedOnMBD_mbd_rtw</name>
 			<type>2</type>
-			<locationURI>$%7BPARENT-2-PROJECT_LOC%7D/BLDCctrlBasedOnMBD_mbd_rtw</locationURI>
+			<locationURI>$%7BPARENT-2-PROJECT_LOC%7D/ModelForMBD/BLDCctrlBasedOnMBD/BLDCctrlBasedOnMBD_mbd_rtw</locationURI>
 		</link>
 	</linkedResources>
 </projectDescription>

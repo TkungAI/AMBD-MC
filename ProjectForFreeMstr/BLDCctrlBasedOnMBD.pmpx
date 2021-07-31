@@ -19,7 +19,7 @@
 			<member name="mapfile_pre_select" type="sint32">0</member>
 			<member name="comm_params_saved" type="sint32">0</member>
 			<member name="comm_state_saved" type="sint32">0</member>
-			<member name="comm_state_enabled" type="sint32">0</member>
+			<member name="comm_state_enabled" type="sint32">1</member>
 			<member name="cthread_boosting" type="sint32">0</member>
 			<member name="cthread_prio_base" type="sint32">3</member>
 			<member name="cthread_prio_boost" type="sint32">3</member>
@@ -1335,10 +1335,10 @@
 			<member name="size_shift_right" type="sint32">0</member>
 		</object>
 		<object name="ObjId0027" type="CObList">
-			<member name="item0" type="CObject_ptr">ObjId0028</member>
+			<member name="item0" type="CObject_ptr">ObjId0157</member>
 		</object>
-		<object name="ObjId0028" type="CPrjDoc_MapFileInfo">
-			<member name="file_name" type="string">C:\Users\k\Desktop\MatlabWorkSpace\autoMBDMotorControl\BLDCctrlBasedOnMBD_mbd_rtw\BLDCctrlBasedOnMBD.elf</member>
+		<object name="ObjId0157" type="CPrjDoc_MapFileInfo">
+			<member name="file_name" type="string">..\ModelForMBD\BLDCctrlBasedOnMBD\BLDCctrlBasedOnMBD_mbd_rtw\BLDCctrlBasedOnMBD.elf</member>
 			<member name="file_type" type="CObject_ptr">ObjId0012</member>
 		</object>
 		<object name="ObjId0029" type="CPrjItemProject">
@@ -1857,7 +1857,7 @@
 			<member name="yblock3_info" type="CPrjItemRS_YBlockInfo">ObjId0123</member>
 			<member name="yblock4_info" type="CPrjItemRS_YBlockInfo">ObjId0124</member>
 			<member name="yblock5_info" type="CPrjItemRS_YBlockInfo">ObjId0125</member>
-			<member name="rec_time_base" type="sint32">4</member>
+			<member name="rec_time_base" type="sint32">0</member>
 			<member name="rec_total_samples" type="sint32">500</member>
 			<member name="trig_pretrigger" type="sint32">20</member>
 			<member name="trig_arun" type="sint32">1</member>
@@ -2367,7 +2367,7 @@
 			<member name="yblock3_info" type="CPrjItemRS_YBlockInfo">ObjId0144</member>
 			<member name="yblock4_info" type="CPrjItemRS_YBlockInfo">ObjId0145</member>
 			<member name="yblock5_info" type="CPrjItemRS_YBlockInfo">ObjId0146</member>
-			<member name="rec_time_base" type="sint32">4</member>
+			<member name="rec_time_base" type="sint32">1</member>
 			<member name="rec_total_samples" type="sint32">500</member>
 			<member name="trig_pretrigger" type="sint32">20</member>
 			<member name="trig_arun" type="sint32">1</member>
