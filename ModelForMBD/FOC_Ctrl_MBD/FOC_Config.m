@@ -1,13 +1,14 @@
 clear;clc;
 
 %% Load Structures
-load('structFOCMotorCrtl.mat');
-load('strcutFocInternalPara.mat');
+load('struct_FOC_Crtl.mat');
 
 %% Model parameters
 Ts = 0.0001;
 Tctr = 0.0000625;
+Ts_PIL = 0.0000125;
 Fpwm = 16000;
+Ts_simscape = 1/4000000;
 
 %% Motor parameters
 motor.DC = 12;                      % [V]
