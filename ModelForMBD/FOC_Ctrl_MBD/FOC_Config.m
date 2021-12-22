@@ -8,7 +8,7 @@ Ts = 0.0001;
 Tctr = 0.0000625;
 Ts_PIL = 0.0000125;
 Fpwm = 16000;
-Ts_simscape = 1/4000000;
+Ts_simscape = 1/40000000;
 
 %% Motor parameters
 motor.DC = 12;                      % [V]
