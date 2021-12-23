@@ -67,6 +67,6 @@ Debug_RAM
 Release_FLASH
 Release_RAM
 *.g_c
-*.g_h
+*.g_x
 language.settings.xml
 
