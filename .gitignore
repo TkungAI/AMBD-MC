@@ -60,3 +60,13 @@ TestFolder
 temp.slx
 *_mbd_rtw
 *_ert_rtw
+
+# S32DS unused
+Debug_FLASH
+Debug_RAM
+Release_FLASH
+Release_RAM
+*.g_c
+*.g_h
+language.settings.xml
+
