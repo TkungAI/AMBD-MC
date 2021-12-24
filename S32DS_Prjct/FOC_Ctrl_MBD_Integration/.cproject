@@ -379,7 +379,7 @@
 							<targetPlatform archList="all" binaryParser="org.eclipse.cdt.core.ELF" id="cdt.managedbuild.targetPlatform.gnu.cross.1933905893" isAbstract="false" osList="all" superClass="cdt.managedbuild.targetPlatform.gnu.cross"/>
 							<builder buildPath="${workspace_loc:/FOC_Ctrl_MBD_Integration}/Debug_RAM" id="com.freescale.s32ds.cross.gnu.builder.2146274529" keepEnvironmentInBuildfile="false" managedBuildOn="true" name="FSL Make Builder" superClass="com.freescale.s32ds.cross.gnu.builder"/>
 							<tool id="com.nxp.s32ds.cle.arm.mbs.arm32.bare.tool.c.compiler.1263299151" name="Standard S32DS C Compiler" superClass="com.nxp.s32ds.cle.arm.mbs.arm32.bare.tool.c.compiler">
-								<option defaultValue="gnu.c.optimization.level.none" id="gnu.c.compiler.option.optimization.level.1869208227" name="Optimization Level" superClass="gnu.c.compiler.option.optimization.level" useByScannerDiscovery="false" value="gnu.c.optimization.level.optimize" valueType="enumerated"/>
+								<option defaultValue="gnu.c.optimization.level.none" id="gnu.c.compiler.option.optimization.level.1869208227" name="Optimization Level" superClass="gnu.c.compiler.option.optimization.level" useByScannerDiscovery="false" value="gnu.c.optimization.level.size" valueType="enumerated"/>
 								<option id="gnu.c.compiler.option.debugging.level.1234475186" name="Debug Level" superClass="gnu.c.compiler.option.debugging.level" useByScannerDiscovery="false" value="gnu.c.debugging.level.default" valueType="enumerated"/>
 								<option id="com.freescale.s32ds.cross.gnu.tool.c.compiler.option.optimization.functionsections.1367766600" name="Function sections (-ffunction-sections)" superClass="com.freescale.s32ds.cross.gnu.tool.c.compiler.option.optimization.functionsections" useByScannerDiscovery="true" value="true" valueType="boolean"/>
 								<option id="com.freescale.s32ds.cross.gnu.tool.c.compiler.option.optimization.datasections.2081877419" name="Data sections (-fdata-sections)" superClass="com.freescale.s32ds.cross.gnu.tool.c.compiler.option.optimization.datasections" useByScannerDiscovery="true" value="true" valueType="boolean"/>
@@ -398,6 +398,12 @@
 									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/SDK/platform/drivers/inc&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/SDK/rtos/osif/&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/SDK/platform/drivers/src/ftm&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/FOC_Ctrl_MBD_Integration/Sources/GD3000}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/FOC_Ctrl_MBD_Integration/Sources/GD3000/aml}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/FOC_Ctrl_MBD_Integration/Sources/GD3000/aml/spi_aml}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/FOC_Ctrl_MBD_Integration/Sources/GD3000/aml/wait_aml}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/FOC_Ctrl_MBD_Integration/Sources/GD3000/tpp}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/FOC_Ctrl_MBD_Integration/Sources/FOC_OpenMode_ert_rtw}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${FREEMASTER_S32XX_2.0.0_PATH}/src_common&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${FREEMASTER_S32XX_2.0.0_PATH}/src_platforms/S32xx&quot;"/>
 								</option>
@@ -455,6 +461,9 @@
 								<option id="com.nxp.s32ds.cle.arm.mbs.arm32.bare.tool.c.linker.option.target.instructionset.961623454" name="Instruction set" superClass="com.nxp.s32ds.cle.arm.mbs.arm32.bare.tool.c.linker.option.target.instructionset" value="com.nxp.s32ds.cle.arm.mbs.arm32.bare.tool.c.linker.option.target.instructionset.thumb" valueType="enumerated"/>
 								<option id="com.freescale.s32ds.cross.gnu.tool.c.linker.option.scriptfile.924544602" name="Script files (-T)" superClass="com.freescale.s32ds.cross.gnu.tool.c.linker.option.scriptfile" valueType="stringList">
 									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Project_Settings/Linker_Files/S32K144_64_ram.ld&quot;"/>
+								</option>
+								<option id="gnu.c.link.option.libs.1380873681" name="Libraries (-l)" superClass="gnu.c.link.option.libs" valueType="libs">
+									<listOptionValue builtIn="false" srcPrefixMapping="" srcRootPath="" value="m"/>
 								</option>
 								<inputType id="com.freescale.s32ds.cross.gnu.tool.c.linker.inputType.scriptfile.1789583452" superClass="com.freescale.s32ds.cross.gnu.tool.c.linker.inputType.scriptfile"/>
 							</tool>
@@ -517,7 +526,7 @@
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Generated_Code"/>
 						<entry excluding="Debugger|Linker_Files" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Project_Settings"/>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="SDK"/>
-						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Sources"/>
+						<entry excluding="FOC_OpenMode_ert_rtw/ert_main.c" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Sources"/>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="include"/>
 					</sourceEntries>
 				</configuration>
@@ -717,4 +726,5 @@
 	<storageModule moduleId="refreshScope"/>
 	<storageModule moduleId="org.eclipse.embsys" parent_project="true" register_architecture="" register_board="---  none ---" register_chip="S32K144" register_core="CortexM4F" register_vendor=""/>
 	<storageModule moduleId="org.eclipse.cdt.make.core.buildtargets"/>
+	<storageModule moduleId="org.eclipse.cdt.internal.ui.text.commentOwnerProjectMappings"/>
 </cproject>
