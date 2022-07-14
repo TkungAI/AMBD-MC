@@ -41,15 +41,15 @@ AMBD-MC（autoMBD Motor Control project）是autoMBD的第一个开源项目，�
 ## BLDC模型
 基于MBD电机控制框架，实现了BLDC六步换相算法。
 * BLDC完整模型预览
-![MBD-BLDC](Record_Pictures\BLDCctrl-Model-overview.png)
+![MBD-BLDC](Record_Pictures/BLDCctrl-Model-overview.png)
 * BLDC运行结果预览
-![MBD-BLDC](Record_Pictures\BLDCctrl-FreeMstr-DutyWave.png)
+![MBD-BLDC](Record_Pictures/BLDCctrl-FreeMstr-DutyWave.png)
 
 ## PMSM模型
 基于MBD电机控制框架，实现了FOC无感算法。
 * FOC算法模型预览
-![MBD-BLDC](Record_Pictures\FOC-Algorithm-Overview.png)
+![MBD-BLDC](Record_Pictures/FOC-Algorithm-Overview.png)
 * PIL测试模型预览
-![MBD-BLDC](Record_Pictures\FOC-PIL-Overview.png)
+![MBD-BLDC](Record_Pictures/FOC-PIL-Overview.png)
 * 运行结果预览
-![MBD-BLDC](Record_Pictures\三相电流-带载.png)
+![MBD-BLDC](Record_Pictures/三相电流-带载.png)
