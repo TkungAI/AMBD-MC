@@ -13,7 +13,7 @@ nav:
   - Examples: examples/example.md
   - Changelog: changelog.md
   - FAQ: faq.md
-  - doc-license: doc-license.md
+  - doc-license: doc-lic.md
   - Contributing: doc-contributing.md
 
 theme:
