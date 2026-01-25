@@ -1,0 +1,75 @@
+name: Build and deploy docs
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install mkdocs-material
+
+      - name: Build docs
+        run: |
+          mkdocs build --verbose
+
+      - name: Check site directory
+        run: |
+          ls -la
+          test -d site || (echo "site directory not found" && exit 1)
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+
+      - name: Check links (optional)
+        run: |
+          npm install -g markdown-link-check
+          # 检查docs目录下的所有markdown文件，忽略错误
+          find ./docs -name "*.md" -exec markdown-link-check {} \; || true
+
+      - name: Upload site artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: site
+          path: site
+          retention-days: 1
+
+  deploy:
+    needs: build
+    if: (github.event_name == 'push' && github.ref == 'refs/heads/main')
+    runs-on: ubuntu-latest
+    steps:
+      - name: Download artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: site
+          path: site
+      - name: Setup Pages
+        uses: actions/configure-pages@v4
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: site
+      - name: Deploy to GitHub Pages
+        uses: actions/deploy-pages@v4
