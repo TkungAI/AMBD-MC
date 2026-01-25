@@ -1,10 +1,10 @@
-site_name: TestRepo Docs
-site_description: "TestRepo — 模型与工具文档"
+site_name: AMBD-MC Docs
+site_description: "AMBD-MC — autoMBD Motor Control Documentation"
 site_author: autoMBD
-repo_name: autoMBD/TestRepo
-repo_url: https://github.com/autoMBD/TestRepo
+repo_name: autoMBD/AMBD-MC
+repo_url: https://github.com/autoMBD/AMBD-MC
 nav:
-  - Home: home.md
+  - Home: index.md
   - Quick Start: getting-started.md
   - Architecture: architecture.md
   - Tutorials:
