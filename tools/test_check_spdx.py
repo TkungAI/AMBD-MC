@@ -31,8 +31,9 @@ def check_file(path):
 
 def find_files(root):
     for dirpath, dirs, files in os.walk(root):
-        # skip .git directory
-        if ".git" in dirpath.split(os.sep):
+        # skip .git and legacy directories
+        path_parts = dirpath.split(os.sep)
+        if ".git" in path_parts or "legacy" in path_parts:
             continue
         for fn in files:
             if any(fn.lower().endswith(ext) for ext in EXTENSIONS):
